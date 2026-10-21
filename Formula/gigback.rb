@@ -1,14 +1,10 @@
 class Gigback < Formula
   desc "Tiered, safety-first storage cleaner for developer Macs"
   homepage "https://github.com/evojewel/gigback"
-  url "https://github.com/evojewel/gigback/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "ad76829ff069b02c511152d95b4ddde1abbefe346df4afb8b6f466c0cd4425bb"
+  url "https://github.com/evojewel/gigback/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "89d6c1d5991a8dfa8a8fb2a331840e6f7f1020475aae4be6c66958b7d8f562f0"
   license "MIT"
 
-  bottle do
-    root_url "https://github.com/evojewel/gigback/releases/download/v0.2.0"
-    sha256 cellar: :any_skip_relocation, all: "ff268a3aef1953d74b91d1b0ae71d180f522aa8ef323ebf81020cea0d7d3f9a7"
-  end
 
   def install
     libexec.install "bin", "lib"
